@@ -27,27 +27,15 @@ function task2() {
 task2();
 
 //3.Get the day, month and year of the current date and output it to the console separately
-
 function task3() {
     let currentDate = new Date();
     
-    console.log(getLocalDay(currentDate));
+    console.log(currentDate.getDate());
     console.log(getLocalMonth(currentDate));
     console.log(currentDate.getFullYear());
 }
 
-function getLocalDay(date) {
-
-    let day = date.getDay();
-  
-    if (day == 0) { 
-      day = 7;
-    }
-  
-    return day;
-  }
-
-  function getLocalMonth(date) {
+function getLocalMonth(date) {
     return date.getMonth() + 1;
   }
 
