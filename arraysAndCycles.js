@@ -33,7 +33,7 @@ console.log(nameMyFriends);
 //Convert numeric array to Boolean
 let numericArray = [0, 1, 2, -3];
 
-let booleanArray = numericArray.map(item => Boolean(item));
+let booleanArray = numericArray.map(item => !!item);
 console.log(booleanArray);
 
 //Sort the array [1,6,7,8,3,4,5,6] in descending order
@@ -68,18 +68,18 @@ while(a >= 10) {
 let b = 14;
 
 function prime(n){ 
-	for(let i=2; i <= Math.sqrt(n); i++)
-		if(n%i==0)
+	for(let i=2; i <= Math.sqrt(n); i++) {
+		if(n%i==0) {
 			return false;
+        }  
+    }      
 	return true;
 }
 
-while(b > 0) {
-    
+while(b > 1) { 
     if(prime(b)) {
         console.log(b);
     }
-
     b--;
 }
 
