@@ -9,7 +9,11 @@ let cat = {};
 
 cat.__proto__ = animal;
 
-cat.move = 9;
+console.log(animal); //{ move: 0 }
+console.log(cat);    //{}
+console.log(cat.move); //0
 
-console.log(animal);
-console.log(cat);
+animal.move = 3;
+
+console.log(animal.move); //3
+console.log(cat.move);    //3
