@@ -16,9 +16,9 @@ car.power();
 
 // -Pears and apples are accepted to the warehouse, write a function that returns 
 //the result of adding the number of accepted pears and apples
-function calcSumPearsAndApples(numberOfPears, nomberOfApples) {
-    if (typeof numberOfPears == "number" && typeof nomberOfApples == "number") {
-        return numberOfPears + nomberOfApples;
+function calcSumPearsAndApples(numberOfPears, numberOfApples) {
+    if (typeof numberOfPears == "number" && typeof numberOfApples == "number") {
+        return numberOfPears + numberOfApples;
     }
     return "Type of patameters must be a 'number'!!!";
 }
